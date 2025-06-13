@@ -25,6 +25,28 @@ export const MenuList: MenuItem[] | undefined = [
 
     ],
   },
+        {
+    title: "OCR",
+    id:1,
+    icon: "home",
+    type: "sub",
+    children: [
+       {
+      path : "/app/ocr/uploadpolicy",   // <<< 'app' segment ज़रूर लिखें!
+      title: "Upload Policy",
+      type : "link",
+      lanClass : "lan-4"
+    },
+       {
+      path : "/app/ocr/policy-extraction-requests",   // <<< 'app' segment ज़रूर लिखें!
+      title: "Policy Extraction Requests",
+      type : "link",
+      lanClass : "lan-4"
+    },
+     
+    ],
+  },
+ 
       {
         title: "Dashboard ",
         id: 1,
