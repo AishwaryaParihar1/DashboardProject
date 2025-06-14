@@ -1,7 +1,4 @@
 {
-  "/[lng]/(MainBody)/app/ocr/policy-extraction-requests/page": "app/[lng]/(MainBody)/app/ocr/policy-extraction-requests/page.js",
-  "/[lng]/(MainBody)/buttons/default_style/page": "app/[lng]/(MainBody)/buttons/default_style/page.js",
-  "/[lng]/(MainBody)/buttons/flat_style/page": "app/[lng]/(MainBody)/buttons/flat_style/page.js",
-  "/[lng]/(MainBody)/buttons/raised_style/page": "app/[lng]/(MainBody)/buttons/raised_style/page.js",
-  "/[lng]/(MainBody)/buttons/edge_style/page": "app/[lng]/(MainBody)/buttons/edge_style/page.js"
+  "/[lng]/(MainBody)/app/ocr/uploadpolicy/page": "app/[lng]/(MainBody)/app/ocr/uploadpolicy/page.js",
+  "/[lng]/(MainBody)/dashboard/default_dashboard/page": "app/[lng]/(MainBody)/dashboard/default_dashboard/page.js"
 }

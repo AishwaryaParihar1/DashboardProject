@@ -2,50 +2,207 @@ import { MenuItem } from "@/Types/LayoutTypes";
 
 export const MenuList: MenuItem[] | undefined = [
 
-  {
-    title: "Home",
-    lanClass: "lan-1",
-    menucontent: "Dashboards,Widgets",
-    Items: [
+ {
+  title: "Home",
+  lanClass: "lan-1",
+  menucontent: "Dashboards,Widgets",
+  Items: [
+    {
+      title: "Policy",
+      id: 1,
+      icon: "home",
+      type: "sub",
+      children: [
         {
-    title: "Policy",
-    id:1,
-    icon: "home",
-    type: "sub",
-    children: [
-      {
-        path: "/Policy/Upcoming", title: "Upcoming", type: "link", lanClass: "lan-4",
-        children: [ 
-          { path: "/Policy/Upcoming/Fresh", title: "Fresh", type: "link" },
-          { path: "/Policy/Upcoming/Renewal", title: "renewal", type: "link" },
-        ],
-      },
-      { path: "/Policy/Converted", title: "Converted", type: "link",lanClass: "lan-5" },
-      { path: "/Policy/Installments", title: "Installments", type: "link" },
+          path: "/Policy/Upcoming",
+          title: "Upcoming",
+          type: "link",
+          lanClass: "lan-4",
+          children: [
+            { path: "/Policy/Upcoming/Fresh", title: "Fresh", type: "link" },
+            { path: "/Policy/Upcoming/Renewal", title: "renewal", type: "link" }
+          ]
+        },
+        { path: "/Policy/Converted", title: "Converted", type: "link", lanClass: "lan-5" },
+        { path: "/Policy/Installments", title: "Installments", type: "link" }
+      ]
+    },
+    {
+      title: "Accounts",
+      id: 34,
+      icon: "form",
+      type: "sub",
+      children: [
+        {
+          path: "/app/accounts/uninvoiced",
+          title: "Uninvoiced",
+          type: "link",
+          lanClass: "lan-4"
+        },
+        {
+          path: "/app/accounts/invoice",
+          title: "Invoice",
+          type: "link",
+          lanClass: "lan-4"
+        },
+        {
+          path: "/app/accounts/reconciliation-errors",
+          title: "Reconciliation Errors",
+          type: "link",
+          lanClass: "lan-4"
+        },
+        {
+          path: "/app/accounts/tds-reconciliation",
+          title: "TDS Reconciliation",
+          type: "link",
+          lanClass: "lan-4"
+        },
+        {
+          path: "/app/accounts/pending-payout",
+          title: "Pending Payout",
+          type: "link",
+          lanClass: "lan-4"
+        },
+        {
+          path: "/app/accounts/referrer-payment",
+          title: "POS Payments",
+          type: "link",
+          lanClass: "lan-4"
+        }
+      ]
+    },
+    {
+      title: "Reports",
+      id: 35,
+      icon: "form",
+      type: "sub",
+      children: [
+        {
+          path: "/app/reports/client-accounts",
+          title: "Client Accounts",
+          type: "link",
+          lanClass: "lan-4"
+        },
+        {
+          path: "/app/reports/irda-statement",
+          title: "IRDA Statement",
+          type: "link",
+          lanClass: "lan-4"
+        },
+        {
+          path: "/app/reports/premium-register",
+          title: "Premium Register",
+          type: "link",
+          lanClass: "lan-4"
+        },
+        {
+          path: "/app/reports/business-statement",
+          title: "Business Statement",
+          type: "link",
+          lanClass: "lan-4"
+        },
+        {
+          path: "/app/reports/lost-business",
+          title: "Lost Business Report",
+          type: "link",
+          lanClass: "lan-4"
+        },
+        {
+          path: "/app/reports/declined-business",
+          title: "Declined Business Report",
+          type: "link",
+          lanClass: "lan-4"
+        },
+        {
+          path: "/app/reports/login-user",
+          title: "Login User Report",
+          type: "link",
+          lanClass: "lan-4"
+        },
+        {
+          path: "/app/reports/member-business-summary",
+          title: "Member Business Summary Report",
+          type: "link",
+          lanClass: "lan-4"
+        },
+        {
+          path: "/app/reports/month-wise-business",
+          title: "Month Wise Business Report",
+          type: "link",
+          lanClass: "lan-4"
+        },
+        {
+          path: "/app/reports/claim-acknowledgement",
+          title: "Claim Acknowledgement Report",
+          type: "link",
+          lanClass: "lan-4"
+        },
+        {
+          path: "/app/reports/list",
+          title: "List",
+          type: "link",
+          lanClass: "lan-4"
+        },
+        {
+          path: "/app/reports/activity",
+          title: "Activity Report",
+          type: "link",
+          lanClass: "lan-4"
+        },
+        {
+          path: "/app/reports/tickets",
+          title: "Tickets",
+          type: "link",
+          lanClass: "lan-4"
+        },
+        {
+          path: "/app/reports/posp-activation",
+          title: "POSP Activation Report",
+          type: "link",
+          lanClass: "lan-4"
+        },
+        {
+          path: "/app/reports/stage-wise",
+          title: "Stage Wise Report",
+          type: "link",
+          lanClass: "lan-4"
+        },
+        {
+          path: "/app/reports/posp-onboarding-status",
+          title: "POSP Onboarding Status Report",
+          type: "link",
+          lanClass: "lan-4"
+        },
+        {
+          path: "/app/reports/pos-payout",
+          title: "POS PAYOUT REPORT",
+          type: "link",
+          lanClass: "lan-4"
+        }
+      ]
+    },
 
-    ],
-  },
-        {
-    title: "OCR",
-    id:1,
-    icon: "home",
-    type: "sub",
-    children: [
-       {
-      path : "/app/ocr/uploadpolicy",   // <<< 'app' segment ज़रूर लिखें!
+{
+  title: "OCR",
+  id: 36,
+  icon: "form",
+  type: "sub",
+  children: [
+    {
+      path: "/app/ocr/uploadpolicy",
       title: "Upload Policy",
-      type : "link",
-      lanClass : "lan-4"
+      type: "link",
+      lanClass: "lan-4"
     },
-       {
-      path : "/app/ocr/policy-extraction-requests",   // <<< 'app' segment ज़रूर लिखें!
+    {
+      path: "/app/ocr/policy-extraction-requests",
       title: "Policy Extraction Requests",
-      type : "link",
-      lanClass : "lan-4"
-    },
-     
-    ],
-  },
+      type: "link",
+      lanClass: "lan-4"
+    }
+  ]
+},
+
  
       {
         title: "Dashboard ",

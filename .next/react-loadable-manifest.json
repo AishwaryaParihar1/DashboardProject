@@ -4,17 +4,5 @@
     "files": [
       "static/chunks/_app-pages-browser_src_Components_General_Dashboard_DefaultDashboard_index_tsx.js"
     ]
-  },
-  "app\\[lng]\\(MainBody)\\icons\\flag_icons\\page.tsx -> @/Components/Icons/FlagIcons": {
-    "id": "app\\[lng]\\(MainBody)\\icons\\flag_icons\\page.tsx -> @/Components/Icons/FlagIcons",
-    "files": [
-      "static/chunks/_app-pages-browser_src_Components_Icons_FlagIcons_index_tsx.js"
-    ]
-  },
-  "app\\[lng]\\(MainBody)\\icons\\font_awesome_icon\\page.tsx -> @/Components/Icons/FontAwsome": {
-    "id": "app\\[lng]\\(MainBody)\\icons\\font_awesome_icon\\page.tsx -> @/Components/Icons/FontAwsome",
-    "files": [
-      "static/chunks/_app-pages-browser_src_Components_Icons_FontAwsome_index_tsx.js"
-    ]
   }
 }

@@ -21123,6 +21123,7 @@ span[data-img-src]::after {
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[13].use[5]!./node_modules/apexcharts/dist/apexcharts.css ***!
   \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
 @keyframes opaque {
   0% {
     opacity: 0;
@@ -21271,12 +21272,75 @@ rect.legend-mouseover-inactive,
 }
 
 .apexcharts-tooltip-marker {
-  width: 12px;
-  height: 12px;
+  display: inline-block;
   position: relative;
-  top: 0;
-  margin-right: 10px;
-  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+  line-height: 16px;
+  margin-right: 4px;
+  text-align: center;
+  vertical-align: middle;
+  color: inherit;
+}
+
+.apexcharts-tooltip-marker::before {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: currentcolor;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-size: 26px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 14px;
+  font-weight: 900;
+}
+
+.apexcharts-tooltip-marker[shape=circle]::before {
+  content: "●";
+}
+
+.apexcharts-tooltip-marker[shape=square]::before,
+.apexcharts-tooltip-marker[shape=rect]::before {
+  content: "■";
+  transform: translate(-1px, -2px);
+}
+
+.apexcharts-tooltip-marker[shape=line]::before {
+  content: "─";
+}
+
+.apexcharts-tooltip-marker[shape=diamond]::before {
+  content: "◆";
+  font-size: 28px;
+}
+
+.apexcharts-tooltip-marker[shape=triangle]::before {
+  content: "▲";
+  font-size: 22px;
+}
+
+.apexcharts-tooltip-marker[shape=cross]::before {
+  content: "✕";
+  font-size: 18px;
+}
+
+.apexcharts-tooltip-marker[shape=plus]::before {
+  content: "✕";
+  transform: rotate(45deg) translate(-1px, -1px);
+  font-size: 18px;
+}
+
+.apexcharts-tooltip-marker[shape=star]::before {
+  content: "★";
+  font-size: 18px;
+}
+
+.apexcharts-tooltip-marker[shape=sparkle]::before {
+  content: "✦";
+  font-size: 20px;
 }
 
 .apexcharts-tooltip-series-group {
@@ -21520,30 +21584,27 @@ rect.legend-mouseover-inactive,
   cursor: move;
 }
 
-.svg_select_boundingRect,
-.svg_select_points_rot {
+.svg_select_shape {
+  stroke-width: 1;
+  stroke-dasharray: 10 10;
+  stroke: black;
+  stroke-opacity: 0.1;
   pointer-events: none;
-  opacity: 0;
-  visibility: hidden;
+  fill: none;
 }
 
-.apexcharts-selection-rect + g .svg_select_boundingRect,
-.apexcharts-selection-rect + g .svg_select_points_rot {
-  opacity: 0;
-  visibility: hidden;
+.svg_select_handle {
+  stroke-width: 3;
+  stroke: black;
+  fill: none;
 }
 
-.apexcharts-selection-rect + g .svg_select_points_l,
-.apexcharts-selection-rect + g .svg_select_points_r {
-  cursor: ew-resize;
-  opacity: 1;
-  visibility: visible;
+.svg_select_handle_r {
+  cursor: e-resize;
 }
 
-.svg_select_points {
-  fill: #efefef;
-  stroke: #333;
-  rx: 2;
+.svg_select_handle_l {
+  cursor: w-resize;
 }
 
 .apexcharts-svg.apexcharts-zoomable.hovering-zoom {
@@ -21740,10 +21801,8 @@ rect.legend-mouseover-inactive,
 
 .apexcharts-annotation-rect,
 .apexcharts-area-series .apexcharts-area,
-.apexcharts-area-series .apexcharts-series-markers .apexcharts-marker.no-pointer-events,
 .apexcharts-gridline,
 .apexcharts-line,
-.apexcharts-line-series .apexcharts-series-markers .apexcharts-marker.no-pointer-events,
 .apexcharts-point-annotation-label,
 .apexcharts-radar-series path:not(.apexcharts-marker),
 .apexcharts-radar-series polygon,
@@ -21751,12 +21810,17 @@ rect.legend-mouseover-inactive,
 .apexcharts-tooltip .apexcharts-marker,
 .apexcharts-xaxis-annotation-label,
 .apexcharts-yaxis-annotation-label,
-.apexcharts-zoom-rect {
+.apexcharts-zoom-rect,
+.no-pointer-events {
   pointer-events: none;
 }
 
 .apexcharts-tooltip-active .apexcharts-marker {
   transition: 0.15s ease all;
+}
+
+.apexcharts-radar-series .apexcharts-yaxis {
+  pointer-events: none;
 }
 
 .resize-triggers {
@@ -21801,6 +21865,10 @@ rect.legend-mouseover-inactive,
 
 .apexcharts-rangebar-goals-markers {
   pointer-events: none;
+}
+
+.apexcharts-disable-transitions * {
+  transition: none !important;
 }
 /*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[13].use[5]!./node_modules/react-responsive-carousel/lib/styles/carousel.min.css ***!

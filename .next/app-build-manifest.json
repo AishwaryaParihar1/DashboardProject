@@ -1,9 +1,9 @@
 {
   "pages": {
-    "/[lng]/(MainBody)/dashboard/default_dashboard/page": [
+    "/[lng]/(MainBody)/app/ocr/uploadpolicy/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/[lng]/(MainBody)/dashboard/default_dashboard/page.js"
+      "static/chunks/app/[lng]/(MainBody)/app/ocr/uploadpolicy/page.js"
     ],
     "/[lng]/(MainBody)/layout": [
       "static/chunks/webpack.js",
@@ -22,60 +22,15 @@
       "static/chunks/main-app.js",
       "static/chunks/app/loading.js"
     ],
-    "/[lng]/(MainBody)/app/ocr/uploadpolicy/page": [
+    "/[lng]/(MainBody)/Policy/Upcoming/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/[lng]/(MainBody)/app/ocr/uploadpolicy/page.js"
+      "static/chunks/app/[lng]/(MainBody)/Policy/Upcoming/page.js"
     ],
-    "/[lng]/(MainBody)/table/reactstrap_table/basic_table/page": [
+    "/[lng]/(MainBody)/dashboard/default_dashboard/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/[lng]/(MainBody)/table/reactstrap_table/basic_table/page.js"
-    ],
-    "/[lng]/(MainBody)/table/reactstrap_table/table_component/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/[lng]/(MainBody)/table/reactstrap_table/table_component/page.js"
-    ],
-    "/[lng]/(MainBody)/table/data_table/basic_init/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/[lng]/(MainBody)/table/data_table/basic_init/page.js"
-    ],
-    "/[lng]/(MainBody)/icons/flag_icons/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/[lng]/(MainBody)/icons/flag_icons/page.js"
-    ],
-    "/[lng]/(MainBody)/icons/font_awesome_icon/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/[lng]/(MainBody)/icons/font_awesome_icon/page.js"
-    ],
-    "/[lng]/(MainBody)/app/ocr/policy-extraction-requests/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/[lng]/(MainBody)/app/ocr/policy-extraction-requests/page.js"
-    ],
-    "/[lng]/(MainBody)/buttons/default_style/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/[lng]/(MainBody)/buttons/default_style/page.js"
-    ],
-    "/[lng]/(MainBody)/buttons/flat_style/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/[lng]/(MainBody)/buttons/flat_style/page.js"
-    ],
-    "/[lng]/(MainBody)/buttons/edge_style/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/[lng]/(MainBody)/buttons/edge_style/page.js"
-    ],
-    "/[lng]/(MainBody)/buttons/raised_style/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/[lng]/(MainBody)/buttons/raised_style/page.js"
+      "static/chunks/app/[lng]/(MainBody)/dashboard/default_dashboard/page.js"
     ]
   }
 }
